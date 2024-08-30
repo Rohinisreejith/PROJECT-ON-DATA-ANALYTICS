@@ -12,7 +12,7 @@ import plotly.express as px
 st.set_page_config(page_title="laptop price analysis",page_icon=" 💻 ",layout="wide")
 st.title(" 💻 laptop price Analysis 💻 ")
 
-sdf = pd.read_csv("Laptop_price.csv")
+sdf = pd.read_csv("project/Laptop_price.csv")
 st.subheader("laptop price Dataset")
 st.dataframe(sdf.head())
 
