@@ -8,7 +8,7 @@ st.set_page_config(page_title="Heart Disease Analysis", page_icon="❤️", layo
 st.title("❤️ Heart Disease Data Analysis")
 st.image("heart1.jpeg")
 # Loading the heart disease dataset
-hdf = pd.read_csv('heart.csv')
+hdf = pd.read_csv('project/heart.csv')
 st.header("Heart Disease Dataset")
 st.dataframe(hdf.head())
 
