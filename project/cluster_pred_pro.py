@@ -2,10 +2,10 @@ import streamlit as st
 import joblib
 
 # Load the trained KMeans model
-model1 = joblib.load('kmeans_penguins.pkl')
+model1 = joblib.load('project/kmeans_penguins.pkl')
 
 st.header("🐧Penguin Species Prediction🐧")
-st.image("adelie.jpeg")
+st.image("project/adelie.jpeg")
 
 # Input fields for penguin features
 c1, c2 = st.columns(2)
@@ -27,13 +27,13 @@ if st.button("Predict Penguin Species"):
     t = model1.predict(sample)
     if t == 0:
         st.write("🐧 Adelie Penguin")
-        st.image("adelie.jpeg")
+        st.image("project/adelie.jpeg")
     elif t == 1:
         st.write("🐧 Chinstrap Penguin")
-        st.image("chin.jpeg")
+        st.image("project/chin.jpeg")
     elif t == 2:
         st.write("🐧 Gentoo Penguin")
-        st.image("gentoo.jpeg")
+        st.image("project/gentoo.jpeg")
     else:
         st.write("Penguin species not listed")
         
