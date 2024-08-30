@@ -13,7 +13,7 @@ st.set_page_config(page_title="Penguins Data Analysis", page_icon="🐧", layout
 st.title("🐧 Penguins Data Analysis 🐧")
 
 # Load the dataset
-df = pd.read_csv('penguins.csv')
+df = pd.read_csv('project/penguins.csv')
 st.header('🐧 PENGUINS DATA SET 🐧')
 st.table(df.head())
 
@@ -70,7 +70,7 @@ ars = mat.adjusted_rand_score(df['species'], km_final.labels_)
 mu = mat.mutual_info_score(df['species'], km_final.labels_)
 
 st.header("Evaluation Score")
-st.image("gentoo.jpeg")
+st.image("project/gentoo.jpeg")
 
 c1, c2, c3 = st.columns(3)
 c4, c5 = st.columns(2)
@@ -86,4 +86,4 @@ c4.subheader(ars)
 c5.subheader('Mutual Information Score')
 c5.subheader(mu)
 
-m1 = pickle.dump(km_final, open('kmeans_penguins.pkl', 'wb'))
+m1 = pickle.dump(km_final, open('project/kmeans_penguins.pkl', 'wb'))
