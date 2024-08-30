@@ -1,8 +1,8 @@
 import streamlit as st
-import pickle
+import joblib
 
 # Load the trained KMeans model
-model1 = pickle.load(open('kmeans_penguins.pkl', 'rb'))
+model1 = joblib.load('kmeans_penguins.pkl')
 
 st.header("🐧Penguin Species Prediction🐧")
 st.image("adelie.jpeg")
