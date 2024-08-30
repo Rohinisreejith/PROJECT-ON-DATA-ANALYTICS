@@ -1,0 +1,13 @@
+Date,Sales Amount,Product ID,Product Name,Region,Sales Rep,Customer Type,Units Sold
+01-08-2024,5000,101,Widget A,North,John Doe,Retail,50
+02-08-2024,7000,102,Gadget B,South,Jane Smith,Wholesale,70
+03-08-2024,6000,103,Widget A,East,Emily Clark,Retail,60
+04-08-2024,4000,104,Gizmo C,West,Robert Lee,Wholesale,40
+05-08-2024,5500,101,Widget A,North,John Doe,Retail,55
+06-08-2024,6200,105,Gadget D,South,Jane Smith,Retail,62
+07-08-2024,4800,102,Gadget B,East,Emily Clark,Wholesale,48
+08-08-2024,5200,103,Widget A,West,Robert Lee,Retail,52
+09-08-2024,7500,106,Gizmo C,North,John Doe,Wholesale,75
+10-08-2024,8000,107,Gadget D,South,Jane Smith,Retail,80
+11-08-2024,4700,108,Widget A,East,Emily Clark,Wholesale,47
+12-08-2024,6800,109,Gizmo C,West,Robert Lee,Retail,68
