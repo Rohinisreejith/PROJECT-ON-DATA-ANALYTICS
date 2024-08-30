@@ -7,7 +7,7 @@ st.set_page_config(page_title="	🛍️Sales Dashboard🛍️", layout="wide")
 
 st.title("🛍️Sales Dashboard🛍️")
 
-df=pd.read_csv("sample_sales_data.csv")
+df=pd.read_csv("project/sample_sales_data.csv")
 st.header("🛒Sales Dataset🛒")
 st.dataframe(df.head())
 
