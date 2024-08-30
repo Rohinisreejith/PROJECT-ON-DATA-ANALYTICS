@@ -11,7 +11,7 @@ st.set_page_config(page_title="Heart Disease Classification", page_icon="❤️"
 st.title("❤️ Heart Disease Data Analysis and Classification")
 
 # Load the heart disease dataset
-hdf = pd.read_csv('heart.csv')
+hdf = pd.read_csv('project/heart.csv')
 st.header("Heart Disease Dataset")
 st.dataframe(hdf.head())
 
@@ -72,7 +72,7 @@ if st.button("Predict Heart Disease"):
 
     if target_sp == 1:
         st.write("This patient is likely to have Heart Disease.")
-        st.image("heart.jpeg")
+        st.image("project/heart.jpeg")
     else:
         st.write("This patient is unlikely to have Heart Disease.")
-        st.image("healthy.jpeg")
+        st.image("project/healthy.jpeg")
