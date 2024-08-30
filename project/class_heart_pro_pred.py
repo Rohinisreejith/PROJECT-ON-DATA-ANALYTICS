@@ -46,7 +46,7 @@ st.write("58	0	0	100	248	0	0	122	0	1	1	0	2")
 # Prediction section
 st.header("Prediction")
 
-st.image("heart1.jpeg")
+st.image("project/heart1.jpeg")
 n1 = st.number_input("Enter age", min_value=float(x['age'].min()), max_value=float(x['age'].max()))
 n2 = st.number_input("Enter sex (0 = Female, 1 = Male)", min_value=float(x['sex'].min()), max_value=float(x['sex'].max()))
 n3 = st.number_input("Enter cp (chest pain type)", min_value=float(x['cp'].min()), max_value=float(x['cp'].max()))
