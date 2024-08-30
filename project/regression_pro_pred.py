@@ -10,7 +10,7 @@ model_lasso      = joblib.load('project/lass1.pkl')
 model_elasticnet = joblib.load('project/enet1.pkl')
 
 st.header("Prediction")
-st.image("laptop.jpeg")
+st.image("project/laptop.jpeg")
 st.write("3.830295706	,  16	, 512,11.18514743  , 2.641094425	, 17395.09306")
 n = st.number_input("Enter value for Brand : ")
 n1 = st.number_input("Enter value for Processor_Speed : ")
