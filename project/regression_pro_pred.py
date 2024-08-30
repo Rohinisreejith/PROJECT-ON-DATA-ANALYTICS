@@ -1,13 +1,13 @@
 import streamlit as st
-import pickle
+import joblib
 
 st.set_page_config(page_title="Laptop price prediction",page_icon=" 💻 ",layout="wide")
 st.title(" 💻 Laptop price prediction 💻 ")
 
 
-model_ridge      = pickle.load(open('rid1.pkl', 'rb'))
-model_lasso      = pickle.load(open('lass1.pkl', 'rb'))
-model_elasticnet = pickle.load(open('enet1.pkl', 'rb'))
+model_ridge      = joblib.load('project/rid1.pkl')
+model_lasso      = joblib.load('project/lass1.pkl')
+model_elasticnet = joblib.load('project/enet1.pkl')
 
 st.header("Prediction")
 st.image("laptop.jpeg")
