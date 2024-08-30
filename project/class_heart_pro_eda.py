@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_page_config(page_title="Heart Disease Analysis", page_icon="❤️", layout="wide")
 st.title("❤️ Heart Disease Data Analysis")
-st.image("heart1.jpeg")
+st.image("project/heart1.jpeg")
 # Loading the heart disease dataset
 hdf = pd.read_csv('project/heart.csv')
 st.header("Heart Disease Dataset")
